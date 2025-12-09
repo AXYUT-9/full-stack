@@ -1,0 +1,28 @@
+{
+  "movies": [
+    {
+      "id": "1b9f",
+      "title": "Avengers",
+      "genre": "Action",
+      "year": 2016
+    },
+    {
+      "id": "e060",
+      "title": "BhagamBhag",
+      "year": 2018,
+      "genre": "Comedy"
+    },
+    {
+      "id": "76e4",
+      "title": "Avatar",
+      "genre": "action",
+      "year": 2010
+    },
+    {
+      "id": "22fe",
+      "title": "animal",
+      "genre": "action",
+      "year": 2024
+    }
+  ]
+}
