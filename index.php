@@ -1,12 +1,16 @@
-<?php include "header.php"; ?>
+<?php
+require 'vendor/autoload.php';
+require 'app/controllers/employee_controller.php';
 
-<h3>Welcome!</h3>
-<p>My name is Achyut Pachhai. I study Bachelor level in herald collage kathmandu. I am from Ghorahi Dang, Currently living in Putalisadak kathmandu. </p>
+use Jenssegers\Blade\Blade;
 
-<ul>
-    <li><a href="add_student.php">Add Student Info</a></li>
-    <li><a href="upload.php">Upload Portfolio File</a></li>
-    <li><a href="students.php">View Students</a></li>
-</ul>
+$blade = new Blade('app/views', 'cache');
 
-<?php include "footer.php"; ?>
+$data = handleEmployeeRequest();
+
+/* DEBUG LINE (optional)
+var_dump($data);
+exit;
+*/
+
+echo $blade->render($data['view'], $data);
